@@ -1,0 +1,34 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon_color_dark {
+  fill: var(--basic-dark);
+}
+
+.icon_color_semi-dark {
+  fill: var(--basic-dark);
+  opacity: 0.24;
+}
+
+.icon_color_semi-light {
+  fill: var(--basic-light);
+  opacity: 0.15;
+}
+
+.icon_color_light {
+  fill: var(--basic-light);
+}
