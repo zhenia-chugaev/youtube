@@ -9,7 +9,9 @@
   --basic-dark: #000;
   --text-dark: rgba(0, 0, 0, .6);
   --text-semi-dark: #898989;
+  --title-dark: #19202c;
   --link-active: #f00;
+  --bg-dark: rgba(0, 0, 0, .3);
 }
 
 html, body {
