@@ -1,10 +1,29 @@
 .header {
   display: flex;
   align-items: center;
+  min-height: 50px;
   padding: 10px 15px;
 }
 
+.header__group {
+  position: relative;
+}
+
+.header__title {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  color: var(--basic-dark);
+  font-weight: 700;
+  line-height: 25px;
+  padding-left: 10px;
+  line-height: 25px;
+  background-color: var(--basic-light);
+  white-space: nowrap;
+}
+
 .logo__image {
+  display: block;
   width: 116px;
   height: 25px;
 }
@@ -14,10 +33,6 @@
   border: 0;
 }
 
-.search-form__btn .icon {
-  vertical-align: initial;
-}
-
 .header__search-form {
   margin-left: auto;
   margin-right: 25px;
@@ -25,6 +40,11 @@
 
 .header__btn {
   display: none;
+}
+
+.header__btn_type_options {
+  margin-right: 5px;
+  margin-left: 20px;
 }
 
 .header__btn:last-child {
