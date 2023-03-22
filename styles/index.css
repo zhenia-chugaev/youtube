@@ -11,7 +11,11 @@
   --text-semi-dark: #898989;
   --title-dark: #19202c;
   --link-active: #f00;
+  --btn-blue: #2196f3;
   --bg-dark: rgba(0, 0, 0, .3);
+  --bg-semi-dark: rgba(61, 61, 61, .6);
+  --bg-semi-light: rgba(216, 216, 216, .5);
+  --bg-light: rgba(255, 255, 255, .2);
   --border-light: #f1f1f1;
 }
 

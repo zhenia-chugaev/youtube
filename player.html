@@ -40,52 +40,75 @@
         <span class="sr-only">Account</span>
         <img class="btn__image" src="./assets/files/avatar01.png" alt="Current user avatar." width="30" height="30">
       </button>
+      <button class="header__btn header__btn_type_options btn" type="button">
+        <svg class="icon icon_color_dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 19" width="5" height="19">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M2.5 0C3.88071 0 5 1.11929 5 2.5C5 3.88071 3.88071 5 2.5 5C1.11929 5 0 3.88071 0 2.5C0 1.11929 1.11929 0 2.5 0ZM5 9.5C5 8.11929 3.88071 7 2.5 7C1.11929 7 0 8.11929 0 9.5C0 10.8807 1.11929 12 2.5 12C3.88071 12 5 10.8807 5 9.5ZM5 16.5C5 15.1193 3.88071 14 2.5 14C1.11929 14 0 15.1193 0 16.5C0 17.8807 1.11929 19 2.5 19C3.88071 19 5 17.8807 5 16.5Z" />
+        </svg>
+        <span class="sr-only">More</span>
+      </button>
     </div>
   </header>
 
   <main class="content">
     <section class="video">
-      <div>
-        <h1 class="video__title">Dude You Re Getting A Telescope</h1>
+      <div class="video__contents">
+        <div class="video__header">
+          <h1 class="video__title title">Dude You Re Getting A Telescope</h1>
+          <button class="btn">
+            <svg class="icon icon_color_dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 7" width="10" height="7">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.7624 0.798368L9.28113 0.263702C9.11428 0.0879298 8.91953 0 8.69714 0C8.47025 0 8.27771 0.0879298 8.11937 0.263702L5 3.72814L1.88063 0.263789C1.72229 0.0880173 1.52975 8.74923e-05 1.30294 8.74923e-05C1.08047 8.74923e-05 0.885722 0.0880173 0.718866 0.263789L0.243902 0.798455C0.0813008 0.978952 0 1.19523 0 1.44712C0 1.70374 0.0813796 1.91757 0.243902 2.08862L4.42231 6.72912C4.5764 6.90971 4.76886 7 5 7C5.22681 7 5.42147 6.90971 5.58399 6.72912L9.7624 2.08862C9.92075 1.91276 10 1.69893 10 1.44712C10 1.19996 9.92075 0.983764 9.7624 0.798368Z" />
+            </svg>
+            <span class="sr-only">Show more</span>
+          </button>
+        </div>
         <div class="video__player player">
-          <video src="#">
+          <video class="player__screen" src="#" poster="./assets/files/poster19.jpg" height="180">
             <source src="#" type="video/*">
             Your browser doesn't support playback of video content.
           </video>
           <div class="player__menu">
             <div class="player__playback">
-              <time datetime="PT1M34S">1:34</time>
-              <time datetime="PT19M0S">19:00</time>
-              <div class="progress">
-                <div class="progress__bar"></div>
+              <time class="player__time-passed" datetime="PT1M34S">1:34</time>
+              <time class="player__time-left" datetime="PT19M0S">-10:00</time>
+              <div class="player__progress progress">
+                <div class="progress__bar progress__bar_color_red"></div>
               </div>
             </div>
             <div class="player__controls">
               <div class="player__btn-group">
-                <button class="btn" type="button">
+                <button class="player__control player__control_visible player__control_location_left btn" type="button">
+                  <svg class="icon icon_color_light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 24" width="22" height="24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8 0H0V24H8.8V0ZM22 0H13.2V24H22V0Z" />
+                  </svg>
                   <span class="sr-only">Pause</span>
                 </button>
-                <button class="btn" type="button">
+                <button class="player__control btn" type="button">
                   <span class="sr-only">Next video</span>
                 </button>
-                <button class="btn" type="button">
+                <button class="player__control player__control_visible player__control_location_right btn" type="button">
+                  <svg class="icon icon_color_light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.36 12C21.36 16.725 18.015 20.37 13.5 21.465V24C19.485 22.86 24 17.91 24 12C24 6.075 19.485 1.125 13.5 0V2.52C18.015 3.615 21.36 7.26 21.36 12ZM10.5 23.25L3.6 15.66H0V8.31H3.585L10.5 0.72V23.25ZM18 11.985C18 9.6 16.11 7.575 13.5 6.81V17.16C16.11 16.395 18 14.385 18 11.985Z" />
+                  </svg>
                   <span class="sr-only">Mute</span>
                 </button>
-                <div class="progress">
-                  <div class="progress__bar"></div>
+                <div class="player__control progress">
+                  <div class="progress__bar progress__bar_color_white"></div>
                 </div>
               </div>
               <div class="player__btn-group">
-                <button class="btn" type="button">
+                <button class="player__control btn" type="button">
                   <span class="sr-only">Subtitles</span>
                 </button>
-                <button class="btn" type="button">
+                <button class="player__control btn" type="button">
                   <span class="sr-only">Settings</span>
                 </button>
-                <button class="btn" type="button">
+                <button class="player__control btn" type="button">
                   <span class="sr-only">Theater mode</span>
                 </button>
-                <button class="btn" type="button">
+                <button class="player__control btn" type="button">
                   <span class="sr-only">Full screen</span>
                 </button>
               </div>
@@ -93,100 +116,299 @@
           </div>
         </div>
         <div class="video__info">
-          <span>123k views</span>
+          <span class="video__views">123k views</span>
           <div class="video__btn-group">
-            <button class="btn" type="button">
+            <button class="video__btn btn btn_shape_text btn_text_medium" type="button">
+              <svg class="icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="14" height="13">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 11.7329C0 12.4323 0.596816 12.998 1.33303 12.998C1.33303 12.998 8.04913 13.0025 9.00292 12.998C11.0812 13.0194 12.3926 12.4547 12.9582 10.9982C13.11 10.6258 13.9501 7.41689 13.9574 7.38101C14.1966 6.31709 13.4012 5.38783 12.2412 5.38783L9.83527 5.38768C9.64957 5.38767 9.5284 5.24849 9.5647 5.07611C9.5647 5.07611 9.74339 4.23206 9.78223 4.02284C9.92755 3.23995 10.0069 2.62439 9.99953 2.2066C10.012 1.54647 9.63906 0.992714 9.04973 0.55583C8.73233 0.320535 8.24694 0.101358 8.24694 0.101358C7.74148 -0.141148 7.13599 0.0682933 6.90137 0.550712C6.90137 0.550712 4.98706 4.51167 4.82791 4.81413C4.66876 5.11658 4.25203 5.38803 3.88249 5.38803H1.33303C0.597467 5.38803 0 5.95447 0 6.65321V11.7329ZM9.01732 11.7298C10.4976 11.745 11.231 11.4606 11.6047 10.7784H11.3349C10.9656 10.7784 10.6663 10.497 10.6663 10.1443C10.6663 9.79404 10.9618 9.51011 11.3349 9.51011H12.0027C12.0577 9.30901 12.1167 9.09296 12.1758 8.87595H11.6682C11.2989 8.87595 10.9996 8.59446 10.9996 8.24178C10.9996 7.89154 11.2951 7.60761 11.6682 7.60761H12.5203C12.5978 7.32142 12.6492 7.1312 12.6517 7.12138C12.715 6.84298 12.5544 6.65617 12.2411 6.65617L9.83518 6.65602C8.81064 6.65595 8.05528 5.78677 8.25766 4.82571C8.26457 4.79306 8.45663 3.87033 8.46926 3.80229C8.60705 3.05999 8.67174 2.52963 8.66643 2.22779L8.66646 2.18372C8.67005 1.99438 8.54896 1.79258 8.23018 1.55626C8.19435 1.5297 7.95995 1.39474 7.95995 1.39474L6.03797 5.34669C5.68177 6.07909 4.84873 6.60806 3.99985 6.65323V11.7323C6.11497 11.7318 8.75851 11.7309 9.01732 11.7298ZM2.66657 6.65636H1.33303L1.33328 11.7329L2.66657 11.7326V6.65636Z" />
+              </svg>
               <span class="sr-only">Liked by</span> 123k
             </button>
-            <button class="btn" type="button">
+            <button class="video__btn btn btn_shape_text btn_text_medium" type="button">
+              <svg class="icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="14" height="13">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 1.26715C0 0.567738 0.596816 0.00196838 1.33303 0.00196838C1.33303 0.00196838 8.04913 -0.0024662 9.00292 0.00197601C11.0812 -0.019372 12.3926 0.545282 12.9582 2.00179C13.11 2.37423 13.9501 5.58311 13.9574 5.61899C14.1966 6.68291 13.4012 7.61217 12.2412 7.61217L9.83527 7.61232C9.64957 7.61233 9.5284 7.75151 9.5647 7.92389C9.5647 7.92389 9.74339 8.76794 9.78223 8.97716C9.92755 9.76005 10.0069 10.3756 9.99953 10.7934C10.012 11.4535 9.63906 12.0073 9.04973 12.4442C8.73233 12.6795 8.24694 12.8986 8.24694 12.8986C7.74148 13.1411 7.13599 12.9317 6.90137 12.4493C6.90137 12.4493 4.98706 8.48833 4.82791 8.18587C4.66876 7.88342 4.25203 7.61197 3.88249 7.61197H1.33303C0.597467 7.61197 0 7.04553 0 6.34679V1.26715ZM9.01732 1.27024C10.4976 1.25503 11.231 1.53944 11.6047 2.22155H11.3349C10.9656 2.22155 10.6663 2.50304 10.6663 2.85572C10.6663 3.20596 10.9618 3.48989 11.3349 3.48989H12.0027C12.0577 3.69099 12.1167 3.90704 12.1758 4.12405H11.6682C11.2989 4.12405 10.9996 4.40554 10.9996 4.75822C10.9996 5.10846 11.2951 5.39239 11.6682 5.39239H12.5203C12.5978 5.67858 12.6492 5.8688 12.6517 5.87862C12.715 6.15702 12.5544 6.34383 12.2411 6.34383L9.83518 6.34398C8.81064 6.34405 8.05528 7.21323 8.25766 8.17429C8.26457 8.20694 8.45663 9.12967 8.46926 9.19771C8.60705 9.94001 8.67174 10.4704 8.66643 10.7722L8.66646 10.8163C8.67005 11.0056 8.54896 11.2074 8.23018 11.4437C8.19435 11.4703 7.95995 11.6053 7.95995 11.6053L6.03797 7.65331C5.68177 6.92091 4.84873 6.39194 3.99985 6.34677V1.26772C6.11497 1.26825 8.75851 1.26912 9.01732 1.27024ZM2.66657 6.34364H1.33303L1.33328 1.26715L2.66657 1.26741V6.34364Z" />
+              </svg>
               <span class="sr-only">Disliked by</span> 435k
             </button>
-            <button class="btn" type="button">
+            <button class="video__btn btn btn_shape_text btn_text_medium" type="button">
+              <svg class="icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" width="14" height="12">
+                <path d="M8.55556 0L14 5.6L8.55556 11.2V7.92C4.66667 7.92 1.94444 9.2 0 12C0.777778 8 3.11111 4 8.55556 3.2V0Z" />
+              </svg>
               <span>Share</span>
             </button>
-            <button class="btn" type="button">
+            <button class="video__btn btn" type="button">
+              <svg class="icon icon_color_dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 6" width="28" height="6">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 6C4.65685 6 6 4.65685 6 3C6 1.34315 4.65685 0 3 0C1.34315 0 0 1.34315 0 3C0 4.65685 1.34315 6 3 6ZM14 6C15.6569 6 17 4.65685 17 3C17 1.34315 15.6569 0 14 0C12.3431 0 11 1.34315 11 3C11 4.65685 12.3431 6 14 6ZM28 3C28 4.65685 26.6569 6 25 6C23.3431 6 22 4.65685 22 3C22 1.34315 23.3431 0 25 0C26.6569 0 28 1.34315 28 3Z" />
+              </svg>
               <span class="sr-only">More</span>
             </button>
           </div>
         </div>
       </div>
-      <hr>
+      <hr class="video__separator">
       <div class="video__channel-info">
         <div>
-          <h2 class="video__channel-name">Food & Drink</h2>
+          <h2 class="title title_size_s">Food & Drink</h2>
+          <span class="video__subscribers">2.3m subscribed</span>
           <span class="video__date">
             Published on <time datetime="2019-06-14">14 Jun 2019</time>
           </span>
-          <p class="video__channel-description description">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad.</p>
-          <button class="description-btn btn" type="button">Show more</button>
+          <div class="video__channel-description description">
+            <p class="description__text">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad.</p>
+            <button class="description__btn btn" type="button">Show more</button>
+          </div>
         </div>
-        <img class="video__channel-avatar" src="#" alt="" width="80" height="80">
-        <a class="video__channel-link" href="#">Subscribe 2.3m</a>
+        <img class="video__channel-avatar" src="./assets/files/avatar08.png" alt="" width="80" height="80">
+        <a class="video__channel-link channel-link link" href="#">
+          Subscribe <span class="channel-link__note">2.3m</span>
+        </a>
       </div>
     </section>
 
-    <section class="video-list">
-      <h2 class="video-list__title">Next</h2>
-      <div class="video-item">
-        <a class="video-item__link" href="#">
-          <h3 class="video-item__name">Baby Monitor Technology</h3>
-          <div class="video-item__preview">
-            <img class="video-item__poster" src="#" alt="" witdh="250" height="150">
-            <time class="video-item__duration" datetime="PT8M0S">8:00</time>
+    <section class="video-list video-list_dir_vertical">
+      <h2 class="video-list__title title">Next</h2>
+      <div class="video-list__item video-item">
+        <a class="video-item__link link" href="#">
+          <h3 class="title title_size_s">Baby Monitor Technology</h3>
+          <div class="video-item__preview video-preview">
+            <img class="video-preview__poster" src="./assets/files/poster10.jpg" alt="" witdh="250" height="150">
+            <time class="video-preview__duration" datetime="PT8M0S">8:00</time>
           </div>
         </a>
         <div class="video-item__info">
           <span>12k views</span>
-          <time class="video-item__date" datetime="2022-11">4 months ago</time>
-          <a class="video-item__author" href="#">Dollie Blair</a>
+          <a class="video-item__author link" href="#">Dollie Blair</a>
         </div>
       </div>
-      <div class="video-item">
-        <a class="video-item__link" href="#">
-          <h3 class="video-item__name">A Good Autoresponder</h3>
-          <div class="video-item__preview">
-            <img class="video-item__poster" src="#" alt="" witdh="250" height="150">
-            <time class="video-item__duration" datetime="PT2M50S">2:50</time>
+      <div class="video-list__item video-item">
+        <a class="video-item__link link" href="#">
+          <h3 class="title title_size_s">A Good Autoresponder</h3>
+          <div class="video-item__preview video-preview">
+            <img class="video-preview__poster" src="./assets/files/poster11.jpg" alt="" witdh="250" height="150">
+            <time class="video-preview__duration" datetime="PT2M50S">2:50</time>
           </div>
         </a>
         <div class="video-item__info">
           <span>1k views</span>
-          <time class="video-item__date" datetime="2023-03-02">15 days ago</time>
-          <a class="video-item__author" href="#">Dollie Blair</a>
+          <a class="video-item__author link" href="#">Dollie Blair</a>
         </div>
       </div>
-      <div class="video-item">
-        <a class="video-item__link" href="#">
-          <h3 class="video-item__name">Selecting The Right Hotel</h3>
-          <div class="video-item__preview">
-            <img class="video-item__poster" src="#" alt="" witdh="250" height="150">
-            <time class="video-item__duration" datetime="PT9M5S">9:05</time>
+      <div class="video-list__item video-item">
+        <a class="video-item__link link" href="#">
+          <h3 class="title title_size_s">Selecting The Right Hotel</h3>
+          <div class="video-item__preview video-preview">
+            <img class="video-preview__poster" src="./assets/files/poster20.jpg" alt="" witdh="250" height="150">
+            <time class="video-preview__duration" datetime="PT9M5S">9:05</time>
           </div>
         </a>
         <div class="video-item__info">
           <span>123k views</span>
-          <time class="video-item__date" datetime="2022-04">11 months ago</time>
-          <a class="video-item__author" href="#">Dollie Blair</a>
+          <a class="video-item__author link" href="#">Dollie Blair</a>
         </div>
       </div>
-      <div class="video-item">
-        <a class="video-item__link" href="#">
-          <h3 class="video-item__name">A Good Autoresponder</h3>
-          <div class="video-item__preview">
-            <img class="video-item__poster" src="#" alt="" witdh="250" height="150">
-            <time class="video-item__duration" datetime="PT3M40S">3:40</time>
+      <div class="video-list__item video-item">
+        <a class="video-item__link link" href="#">
+          <h3 class="title title_size_s">A Good Autoresponder</h3>
+          <div class="video-item__preview video-preview">
+            <img class="video-preview__poster" src="./assets/files/poster13.jpg" alt="" witdh="250" height="150">
+            <time class="video-preview__duration" datetime="PT3M40S">3:40</time>
           </div>
         </a>
         <div class="video-item__info">
           <span>45k views</span>
-          <time class="video-item__date" datetime="2023-01">2 months ago</time>
-          <a class="video-item__author" href="#">Dollie Blair</a>
+          <a class="video-item__author link" href="#">Dollie Blair</a>
         </div>
       </div>
-      <div class="video-list__btn-group">
-        <a class="video-list__btn btn" href="#">Autoplay</a>
+      <div class="video-list__item video-item">
+        <a class="video-item__link link" href="#">
+          <h3 class="title title_size_s">Asteroids</h3>
+          <div class="video-item__preview video-preview">
+            <img class="video-preview__poster" src="./assets/files/poster15.jpg" alt="" witdh="250" height="150">
+            <time class="video-preview__duration" datetime="PT4M41S">4:15</time>
+          </div>
+        </a>
+        <div class="video-item__info">
+          <span>123k views</span>
+          <a class="video-item__author link" href="#">Dollie Blair</a>
+        </div>
+      </div>
+      <div class="video-list__btn-group btn-group">
+        <a class="video-list__btn btn btn_shape_text link" href="#">Autoplay</a>
       </div>
     </section>
   </main>
+
+  <aside class="app__sidebar app__sidebar_hidden sidebar">
+    <h2 class="sr-only">App navigation</h2>
+    <nav class="navigation">
+      <div class="navigation__group navigation__group_primary nav-group">
+        <h3 class="nav-group__title sr-only">Navigation links</h3>
+        <ul class="nav-group__list">
+          <li class="nav-group__item">
+            <a class="nav-group__link nav-group__link_active" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19" width="20" height="19">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.55192 10.5921C1.19689 10.9455 0.621289 10.9455 0.266267 10.5921C-0.0887555 10.2388 -0.0887555 9.66595 0.266267 9.31262L9.35718 0.264999C9.7122 -0.0883329 10.2878 -0.0883329 10.6428 0.264999L19.7337 9.31262C20.0888 9.66595 20.0888 10.2388 19.7337 10.5921C19.3787 10.9455 18.8031 10.9455 18.4481 10.5921L18.1818 10.3274V17.1945C18.1818 18.1933 17.3689 19 16.3628 19H3.63716C2.63348 19 1.81818 18.1934 1.81818 17.1945V10.3274L1.55192 10.5921ZM3.63716 17.1905L6.36364 17.191V11.7597C6.36364 11.2612 6.77023 10.8571 7.27003 10.8571H12.73C13.2306 10.8571 13.6364 11.2609 13.6364 11.7597V17.1929L16.3636 17.1945V8.51944L10 2.19166L3.63632 8.51948C3.63613 10.2308 3.63716 17.1905 3.63716 17.1905ZM11.8182 12.6653V17.1923L8.18182 17.1914V12.6667L11.8182 12.6653Z" />
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 21" width="16" height="21">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.615 7.20041C15.1323 8.51081 16 10.1175 16 12.321C16 16.9118 12.4133 20.5268 8.0115 20.5268C3.60573 20.5268 0 16.9093 0 12.321C0 9.79412 0.547583 8.23242 2.15502 5.6366C2.66365 4.81522 3.89867 5.11434 3.99436 6.08209C4.08034 6.95167 4.34435 7.69187 4.729 8.25935C4.47244 5.19295 5.80372 1.74433 9.08631 0.10596C9.84629 -0.27335 10.6943 0.424512 10.4966 1.26648C9.98409 3.44851 10.5121 4.62244 11.8924 5.88709C11.926 5.91795 12.098 6.04489 12.3254 6.21279C12.7373 6.51686 13.3311 6.95524 13.615 7.20041ZM2.62075 9.00737C2.33897 9.66335 2 10.4525 2 12.321C2 15.7681 4.70107 18.478 8.0115 18.478C11.3159 18.478 14 15.7727 14 12.321C14 10.7811 13.4246 9.71578 12.3258 8.76679C12.1524 8.61699 11.7458 8.31456 11.3632 8.0299C11.0014 7.76076 10.6609 7.5075 10.559 7.41416C9.23392 6.20002 8.4238 4.9071 8.31376 3.18307C7.64377 3.85212 6.10424 5.93208 6.97198 10.0484C7.1065 10.6865 6.6318 11.289 5.99451 11.289C4.73006 11.289 3.48016 10.2984 2.71627 8.78204C2.68562 8.85634 2.65357 8.93095 2.62075 9.00737Z" />
+              </svg>
+              <span>Trending</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 18" width="18" height="18">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.9056 1C3.9056 0.447715 4.35471 0 4.901 0H12.9102C13.4599 0 13.9056 0.443865 13.9056 1C13.9056 1.55228 13.4565 2 12.9102 2H4.901C4.35125 2 3.9056 1.55614 3.9056 1ZM0.0101027 8.0949L0.811023 16.1041C0.917267 17.1665 1.83603 18 2.90122 18H14.91C15.9712 18 16.8943 17.1632 17.0002 16.1041L17.8011 8.0949C17.9152 6.95379 17.0495 6 15.9047 6H1.90647C0.759323 6 -0.103812 6.95576 0.0101027 8.0949ZM2.01101 8.00421L15.7998 8.0079L14.9056 16H2.9056L2.01101 8.00421ZM2.90122 3C2.35555 3 1.9056 3.44772 1.9056 4C1.9056 4.55614 2.35136 5 2.90122 5H14.91C15.4557 5 15.9056 4.55228 15.9056 4C15.9056 3.44386 15.4598 3 14.91 3H2.90122Z" />
+              </svg>
+              <span>Subscriptions</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 16" width="20" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.81377 0C0.818072 0 0 0.793984 0 1.77341V14.2266C0 15.2066 0.814396 16 1.819 16H18.181C19.185 16 20 15.2042 20 14.2225V4.44412C20 3.4608 19.1843 2.66667 18.1781 2.66667H10.0034L8.71574 0.742815C8.441 0.332343 7.81071 0 7.30762 0H1.81377ZM18.181 14.2222L1.81818 14.2266L1.81377 1.77778L7.27273 1.78212L8.48211 3.64019C8.818 4.14203 9.39005 4.44444 10.0034 4.44444L18.1818 4.44412L18.181 14.2222Z" />
+              </svg>
+              <span>Library</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 18" width="20" height="18">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.36364 0C4.85741 0 3.63636 1.20746 3.63636 2.69744V12.6H0.909091C0.407014 12.6 0 13.0042 0 13.4991V15.3C0 16.7912 1.22411 18 2.72727 18H13.6364C15.1423 18 16.3636 16.7944 16.3636 15.3045V5.4H19.0909C19.5965 5.4 20 4.99813 20 4.5024V2.70439C20 1.21111 18.7799 0 17.2727 0H6.36364ZM5.3 16.2C5.40009 15.9193 5.45455 15.6172 5.45455 15.3026V2.69744C5.45455 2.20206 5.86107 1.8 6.36364 1.8C6.86402 1.8 7.27273 2.2043 7.27273 2.7V4.50094C7.27273 4.99748 7.67624 5.4 8.18182 5.4H14.5455V15.3045C14.5455 15.7991 14.1394 16.2 13.6364 16.2H5.3ZM1.81818 14.4V15.3C1.81818 15.7957 2.22689 16.2 2.72727 16.2C3.22984 16.2 3.63636 15.7979 3.63636 15.3026V14.4H1.81818ZM9.09091 3.6V2.7C9.09091 2.38443 9.03609 2.0815 8.9354 1.8H17.2727C17.7747 1.8 18.1818 2.20414 18.1818 2.70439V3.6H9.09091Z" />
+              </svg>
+              <span>History</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17 19" width="17" height="19">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.7263 16.7342C11.4999 17.5194 10.0515 17.973 8.5 17.973C6.94846 17.973 5.50008 17.5194 4.27374 16.7342L3.36555 18.3497C3.08967 18.8405 2.48163 19.0104 2 18.7248C1.52171 18.4412 1.35565 17.817 1.6335 17.3227C1.6335 17.3227 2.68265 15.4627 2.70994 15.4264C1.3407 13.9519 0.5 11.9552 0.5 9.75676C0.5 8.53312 0.760452 7.37196 1.22753 6.32856C0.476253 5.66926 0 4.68905 0 3.59459C0 1.60935 1.567 0 3.5 0C4.79331 0 5.92278 0.720433 6.52869 1.79186C7.15928 1.62774 7.81973 1.54054 8.5 1.54054C9.11512 1.54054 9.71402 1.61184 10.2893 1.74683C10.9011 0.700295 12.017 0 13.2921 0C15.2251 0 16.7921 1.60935 16.7921 3.59459C16.7921 4.61644 16.3769 5.5387 15.7104 6.19316C16.2164 7.27113 16.5 8.47993 16.5 9.75676C16.5 11.9552 15.6593 13.9519 14.2901 15.4264C14.3173 15.4627 15.3665 17.3227 15.3665 17.3227C15.6443 17.817 15.4783 18.4412 15 18.7248C14.5184 19.0104 13.9103 18.8405 13.6344 18.3497L12.7263 16.7342ZM7.5 5.64845C7.5 5.08135 7.94386 4.62162 8.5 4.62162C9.05229 4.62162 9.5 5.07733 9.5 5.64845V9.75676C9.5 10.324 9.05665 10.7838 8.50095 10.7838H6.49905C5.94729 10.7838 5.5 10.3279 5.5 9.75676C5.5 9.18955 5.94335 8.72973 6.49905 8.72973H7.5V5.64845ZM2 3.59459C2 2.74378 2.67157 2.05405 3.5 2.05405C3.93928 2.05405 4.3426 2.24978 4.62052 2.56955C3.73645 3.07397 2.95519 3.74545 2.3172 4.54247C2.11715 4.27879 2 3.9482 2 3.59459ZM14.7921 3.59459C14.7921 2.74378 14.1205 2.05405 13.2921 2.05405C12.8889 2.05405 12.5161 2.21892 12.2426 2.49324C13.1305 2.9768 13.9191 3.62706 14.569 4.4034C14.7112 4.1665 14.7921 3.8885 14.7921 3.59459ZM8.5 15.9189C5.18629 15.9189 2.5 13.16 2.5 9.75676C2.5 6.35349 5.18629 3.59459 8.5 3.59459C11.8137 3.59459 14.5 6.35349 14.5 9.75676C14.5 13.16 11.8137 15.9189 8.5 15.9189Z" />
+              </svg>
+              <span>Watch</span> later
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 19 18" width="19" height="18">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.5882 16.1776C15.8046 17.4345 14.7118 18.2242 13.5793 17.6312C13.5793 17.6312 9.32641 15.4276 9.36773 15.4059L5.11778 17.6312C3.98444 18.2246 2.89263 17.4335 3.10892 16.1776C3.10892 16.1776 3.89901 11.4682 3.93244 11.5007L0.494159 8.16277C-0.422732 7.27264 -0.00467551 5.99401 1.26148 5.81077C1.26148 5.81077 6.00269 5.10388 5.98203 5.14558L8.107 0.857337C8.67367 -0.286213 10.0239 -0.285345 10.5901 0.857337C10.5901 0.857337 12.7302 5.1298 12.684 5.12312L17.4356 5.81077C18.7027 5.99415 19.1191 7.27331 18.2029 8.16277C18.2029 8.16277 14.7844 11.5102 14.7765 11.4644L15.5882 16.1776ZM5.09647 15.5573L8.50515 13.7718C9.0044 13.5104 9.6939 13.511 10.1919 13.7718L13.609 15.561L12.9495 11.7764C12.8542 11.2228 13.0679 10.5699 13.4708 10.1787L16.2242 7.50565L12.4175 6.95008C11.8593 6.8693 11.3019 6.46516 11.0528 5.96262L9.34969 2.52567L7.64427 5.96262C7.39464 6.46637 6.83646 6.8695 6.27962 6.95008L2.46854 7.50163L5.22632 10.1787C5.63022 10.5708 5.84269 11.2241 5.74757 11.7764L5.09647 15.5573Z" />
+              </svg>
+              <span>Favourites</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 17" width="18" height="17">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.6 0C11.217 0 9.95536 0.530866 9 1.40391C8.04464 0.530866 6.78304 0 5.4 0C2.41766 0 0 2.46848 0 5.51351C0 9.95785 4.48072 14.2534 8.62049 16.7595C8.83009 16.8923 9.17315 16.8905 9.38216 16.7577C13.4946 14.2432 18 9.95763 18 5.51351C18 2.46848 15.5823 0 12.6 0ZM9.00509 14.8252C4.5546 11.8546 1.8 8.38441 1.8 5.51351C1.8 3.48349 3.41177 1.83784 5.4 1.83784C6.29958 1.83784 7.14325 2.17359 7.79955 2.77335L8.66561 3.56478C8.8528 3.73585 9.14971 3.73355 9.33439 3.56478L10.2004 2.77335C10.8567 2.17359 11.7004 1.83784 12.6 1.83784C14.5882 1.83784 16.2 3.48349 16.2 5.51351C16.2 8.45823 13.4557 11.8546 9.00509 14.8252Z" />
+              </svg>
+              <span>Liked</span> videos
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 20" width="18" height="20">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.85 17.2729C16.5897 17.2729 18 15.8484 18 14.0911V0.92929C18.0016 0.854306 17.9939 0.777902 17.9762 0.701509C17.8626 0.212723 17.3782 -0.0904878 16.8943 0.0242693L5.22802 2.79094C4.82628 2.88621 4.55117 3.23961 4.5 3.63657V13.9428C4.09084 13.7464 3.63312 13.6366 3.15 13.6366C1.4103 13.6366 0 15.0611 0 16.8184C0 18.5757 1.4103 20.0002 3.15 20.0002C4.8897 20.0002 6.3 18.5757 6.3 16.8184V8.0407L16.2 5.6929V11.2155C15.7908 11.0192 15.3331 10.9093 14.85 10.9093C13.1103 10.9093 11.7 12.3338 11.7 14.0911C11.7 15.8484 13.1103 17.2729 14.85 17.2729ZM6.3 6.17308V4.40434L16.2 2.05654V3.82528L6.3 6.17308ZM16.2 14.0911C16.2 13.338 15.5956 12.7275 14.85 12.7275C14.1044 12.7275 13.5 13.338 13.5 14.0911C13.5 14.8442 14.1044 15.4548 14.85 15.4548C15.5956 15.4548 16.2 14.8442 16.2 14.0911ZM3.15 15.4548C3.89558 15.4548 4.5 16.0653 4.5 16.8184C4.5 17.5715 3.89558 18.182 3.15 18.182C2.40442 18.182 1.8 17.5715 1.8 16.8184C1.8 16.0653 2.40442 15.4548 3.15 15.4548Z" />
+              </svg>
+              <span>Music</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22 16" width="22" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.9034 0.5233C12.1075 0.810958 11.7676 0.88899 10.9998 0.88899C10.232 0.88899 9.89216 0.810958 9.09627 0.5233L9.03409 0.500814C8.02943 0.137542 7.43229 0 6.44525 0C4.05055 0 1.85231 2.2826 0.942996 5.06478C0.245262 7.1996 0.0589768 8.56701 0 11.5385C0.0582506 14.4925 1.34092 15.9856 3.66063 16C5.11467 15.9917 6.11219 15.363 7.03418 14.2208C7.17642 14.0446 7.56758 13.5231 7.60944 13.4673L7.61308 13.4625C8.56208 12.235 9.54325 11.5652 11.0027 11.5556C12.4564 11.5652 13.4376 12.235 14.3866 13.4625L14.3902 13.4673C14.4321 13.5231 14.8232 14.0446 14.9655 14.2208C15.8875 15.363 16.885 15.9917 18.3278 16C20.6587 15.9856 21.9414 14.4925 21.9997 11.5727C21.9407 8.56701 21.7544 7.1996 21.0567 5.06478C20.1474 2.2826 17.9491 0 15.5544 0C14.5674 0 13.9702 0.137542 12.9656 0.500814L12.9034 0.5233ZM8.45597 2.18913C9.4419 2.54547 10.0813 2.66676 10.9998 2.66676C11.9183 2.66676 12.5578 2.54547 13.5437 2.18913L13.6061 2.16655C14.4238 1.87087 14.828 1.77778 15.5544 1.77778C16.9794 1.77778 18.6138 3.47492 19.309 5.60189C19.9465 7.55254 20.1108 8.75828 20.1667 11.5727C20.1263 13.5619 19.5656 14.2146 18.3273 14.2222C17.5536 14.2178 17.0194 13.8811 16.4091 13.125C16.3079 12.9996 16.0221 12.62 15.9044 12.4636L15.9043 12.4634L15.9041 12.4633L15.904 12.4631L15.9037 12.4627L15.9037 12.4627L15.8535 12.3961C14.5953 10.7687 13.164 9.79184 10.9941 9.77782C8.83563 9.79184 7.40436 10.7687 6.14621 12.3961L6.096 12.4626C5.97878 12.6183 5.69198 12.9994 5.59053 13.125C4.98023 13.8811 4.44608 14.2178 3.6611 14.2222C2.43407 14.2146 1.87336 13.5619 1.83299 11.5384C1.88885 8.75828 2.05311 7.55254 2.69066 5.60189C3.38582 3.47492 5.02024 1.77778 6.44525 1.77778C7.17164 1.77778 7.57582 1.87087 8.39355 2.16655L8.45597 2.18913ZM15.5832 5.77778C15.0769 5.77778 14.6665 5.37981 14.6665 4.88889C14.6665 4.39797 15.0769 4 15.5832 4C16.0894 4 16.4998 4.39797 16.4998 4.88889C16.4998 5.37981 16.0894 5.77778 15.5832 5.77778ZM14.6665 8.44444C14.6665 8.93536 15.0769 9.33333 15.5832 9.33333C16.0894 9.33333 16.4998 8.93536 16.4998 8.44444C16.4998 7.95352 16.0894 7.55556 15.5832 7.55556C15.0769 7.55556 14.6665 7.95352 14.6665 8.44444ZM17.4165 7.55556C16.9102 7.55556 16.4998 7.15759 16.4998 6.66667C16.4998 6.17575 16.9102 5.77778 17.4165 5.77778C17.9228 5.77778 18.3332 6.17575 18.3332 6.66667C18.3332 7.15759 17.9228 7.55556 17.4165 7.55556ZM12.8332 6.66667C12.8332 7.15759 13.2436 7.55556 13.7498 7.55556C14.2561 7.55556 14.6665 7.15759 14.6665 6.66667C14.6665 6.17575 14.2561 5.77778 13.7498 5.77778C13.2436 5.77778 12.8332 6.17575 12.8332 6.66667ZM6.4165 9.33333C4.89771 9.33333 3.6665 8.13943 3.6665 6.66667C3.6665 5.19391 4.89771 4 6.4165 4C7.93528 4 9.1665 5.19391 9.1665 6.66667C9.1665 8.13943 7.93528 9.33333 6.4165 9.33333ZM7.33316 6.66667C7.33316 7.15759 6.92276 7.55556 6.4165 7.55556C5.91024 7.55556 5.49983 7.15759 5.49983 6.66667C5.49983 6.17575 5.91024 5.77778 6.4165 5.77778C6.92276 5.77778 7.33316 6.17575 7.33316 6.66667Z" />
+              </svg>
+              <span>Games</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <svg class="nav-group__icon icon icon_color_semi-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8"
+                width="14" height="8">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z" />
+              </svg>
+              <span>Show more</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__group nav-group">
+        <h3 class="nav-group__title">Subscriptions</h3>
+        <ul class="nav-group__list">
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Gussie Singleton</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Nora Francis</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Belle Brigs</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Eunice Cortez</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Emma Hanson</span>
+            </a>
+          </li>
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">
+              <img class="nav-group__avatar" src="#" alt="" width="26" height="26">
+              <span>Leah Berry</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__group nav-group">
+        <h3 class="nav-group__title sr-only">Others</h3>
+        <ul class="nav-group__list">
+          <li class="nav-group__item">
+            <a class="nav-group__link" href="#">Setting</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
 </body>
 </html>
