@@ -53,3 +53,13 @@ img {
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
 }
+
+.app {
+  padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .app {
+    padding-top: 80px;
+  }
+}
