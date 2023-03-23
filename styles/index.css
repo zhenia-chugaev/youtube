@@ -62,4 +62,16 @@ img {
   .app {
     padding-top: 80px;
   }
+
+  .app_sidebar_opened {
+    padding-left: 240px;
+  }
+
+  .app_sidebar_closed {
+    padding-left: 80px;
+  }
+
+  .app_sidebar_closed .app__sidebar {
+    display: none;
+  }
 }
