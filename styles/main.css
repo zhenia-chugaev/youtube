@@ -101,9 +101,6 @@
 }
 
 .video-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px 40px;
   padding: 0 15px;
 }
 
@@ -112,7 +109,7 @@
   padding-top: 40px;
 }
 
-.video-list_dir_vertical .title {
+.video-list_dir_vertical .video-list__header {
   top: 0;
   left: 15px;
 }
@@ -144,9 +141,15 @@
   content: "";
 }
 
-.video-list__title {
+.video-list__header {
   position: absolute;
   left: -9999px;
+}
+
+.video-list__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px 40px;
 }
 
 .video-list__btn-group {
