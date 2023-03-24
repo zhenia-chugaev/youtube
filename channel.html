@@ -73,10 +73,10 @@
 
   <main class="content">
     <section class="content__bio bio">
-      <div>
+      <div class="bio__inner">
         <div class="bio__info">
           <div>
-            <h1 class="bio__name title">Margaret Phelps</h1>
+            <h1 class="bio__name title title_size_m">Margaret Phelps</h1>
             <span class="bio__subscribers">245K subscribed</span>
           </div>
           <img class="bio__avatar" src="./assets/files/avatar03.png" alt="Margaret Phelps." width="80" height="80">
@@ -137,34 +137,38 @@
         </li>
       </menu>
       <article class="channel__contents contents">
-        <h2 class="contents__title">Choosing The Best Audio Player Software For Your Computer</h2>
-        <p class="contents__text">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads.</p>
-        <div class="contents__info">
-          <span>11k views</span> · <time datetime="2022-09">6 months ago</time>
+        <div>
+          <h2 class="contents__title title title_size_m">Choosing The Best Audio Player Software For Your Computer</h2>
+          <p class="contents__text">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads.</p>
+          <div class="contents__info">
+            <span>11k views</span> · <time datetime="2022-09">6 months ago</time>
+          </div>
         </div>
-        <div class="contents__video-preview video-preview">
-          <img class="video-preview__poster" src="#" alt="" width="250" height="150">
-          <time class="video-preview__duration" datetime="PT7M36S">7:36</time>
-        </div>
+        <a class="contents__video-link link" href="#">
+          <div class="contents__video-preview video-preview video-preview_size_l">
+            <img class="video-preview__poster" src="./assets/files/poster16.jpg" alt="" width="250" height="150">
+            <time class="video-preview__duration" datetime="PT7M36S">7:36</time>
+          </div>
+        </a>
       </article>
       <aside class="channel__recommendations recommendations">
         <p class="recommendations__title">Recommended channel</p>
         <ul class="recommendations__list">
-          <li class="recommendation">
-            <a class="recommendation__link" href="#">
-              <img class="recommendation__avatar" src="#" alt="" width="50" height="50">
+          <li class="recommendations__item recommendation">
+            <a class="recommendation__link link" href="#">
+              <img class="recommendation__avatar" src="./assets/files/avatar09.png" alt="Flora Benson avatar." width="50" height="50">
               <span>Flora Benson</span>
             </a>
           </li>
-          <li class="recommendation">
-            <a class="recommendation__link" href="#">
-              <img class="recommendation__avatar" src="#" alt="" width="50" height="50">
+          <li class="recommendations__item recommendation">
+            <a class="recommendation__link link" href="#">
+              <img class="recommendation__avatar" src="./assets/files/avatar10.png" alt="Violet Cobb avatar." width="50" height="50">
               <span>Violet Cobb</span>
             </a>
           </li>
-          <li class="recommendation">
-            <a class="recommendation__link" href="#">
-              <img class="recommendation__avatar" src="#" alt="" width="50" height="50">
+          <li class="recommendations__item recommendation">
+            <a class="recommendation__link link" href="#">
+              <img class="recommendation__avatar" src="./assets/files/avatar11.png" alt="Phillip Mullins avatar." width="50" height="50">
               <span>Phillip Mullins</span>
             </a>
           </li>
@@ -173,9 +177,27 @@
     </section>
 
     <section class="video-list">
-      <a class="video-list__header link">
-        <h2 class="video-list__title title title_size_m">Margaret Phelps videos</h2>
-      </a>
+      <div class="video-list__header">
+        <a class="video-list__channel link">
+          <h2 class="video-list__title title title_size_m">Margaret Phelps videos</h2>
+        </a>
+        <div class="video-list__btn-group">
+          <button class="video-list__btn btn" type="button">
+            <svg class="icon icon_color_light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12" width="10" height="12">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.00168 0.666119L7.53635 1.20514C7.71212 1.39201 7.80005 1.61013 7.80005 1.85921C7.80005 2.11332 7.71212 2.32897 7.53635 2.50632L4.07191 6.00001L7.53626 9.4937C7.71203 9.67105 7.79996 9.88669 7.79996 10.1407C7.79996 10.3899 7.71203 10.608 7.53626 10.7949L7.00159 11.3268C6.8211 11.5089 6.60482 11.6 6.35293 11.6C6.09631 11.6 5.88248 11.5089 5.71143 11.3268L1.07093 6.64702C0.890341 6.47444 0.800049 6.25888 0.800049 6.00001C0.800049 5.74598 0.890341 5.52796 1.07093 5.34593L5.71143 0.666119C5.88729 0.48877 6.10112 0.400006 6.35293 0.400006C6.60009 0.400006 6.81628 0.48877 7.00168 0.666119Z" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="video-list__btn btn" type="button">
+            <svg class="icon icon_color_light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" width="10" height="12">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.998319 0.666119L0.463653 1.20514C0.287881 1.39201 0.199951 1.61013 0.199951 1.85921C0.199951 2.11332 0.287881 2.32897 0.463653 2.50632L3.92809 6.00001L0.463741 9.4937C0.287968 9.67105 0.200039 9.88669 0.200039 10.1407C0.200039 10.3899 0.287968 10.608 0.463741 10.7949L0.998406 11.3268C1.1789 11.5089 1.39518 11.6 1.64707 11.6C1.90369 11.6 2.11752 11.5089 2.28857 11.3268L6.92907 6.64702C7.10966 6.47444 7.19995 6.25888 7.19995 6.00001C7.19995 5.74598 7.10966 5.52796 6.92907 5.34593L2.28857 0.666119C2.11271 0.48877 1.89888 0.400006 1.64707 0.400006C1.39991 0.400006 1.18372 0.48877 0.998319 0.666119Z" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
       <div class="video-list__inner">
         <div class="video-list__item video-item">
           <a class="video-item__link link" href="#">
@@ -267,14 +289,6 @@
             <a class="video-item__author link" href="#">Dollie Blair</a>
           </div>
         </div>
-      </div>
-      <div class="video-list__btn-group">
-        <button class="video-list__btn btn" type="button">
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="video-list__btn btn" type="button">
-          <span class="sr-only">Next</span>
-        </button>
       </div>
     </section>
   </main>
