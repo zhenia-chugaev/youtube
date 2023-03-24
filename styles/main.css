@@ -166,12 +166,13 @@
 }
 
 .video-preview {
+  position: relative;
+  min-width: max-content;
   border-radius: 14px;
   background-color: var(--bg-dark);
 }
 
 .video-item__preview {
-  position: relative;
   order: -1;
   width: 100%;
 }
@@ -574,14 +575,14 @@
 
   .video-list__item {
     flex-shrink: 0;
-    width: 250px;
+    width: auto;
   }
 
-  .video-item_size_l {
+  .video-preview_size_l {
     width: 540px;
   }
 
-  .video-item_size_l .video-preview__poster {
+  .video-preview_size_l .video-preview__poster {
     height: 250px;
   }
 }
