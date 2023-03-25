@@ -649,6 +649,10 @@
     width: auto;
   }
 
+  .video-link__preview {
+    width: 250px;
+  }
+
   .video-link__preview_size_l {
     width: 540px;
   }
@@ -971,6 +975,7 @@
   }
 
   .video-link__preview_ratio_16-9 {
+    width: 100%;
     position: relative;
     padding-top: 56.25%;
   }
